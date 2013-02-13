@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>
+        </title>
+        <!--<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css" />-->
+		<link rel="stylesheet" href="css/my.css" />
+        <script src="js/jquery-1.7.2.min.js">
+        </script>
+        <script src="js/jquery.mobile-1.2.0.min.js">
+        </script>
+        <script src="js/my.js">
+        </script>
+        <!-- User-generated css -->
+        <style>
+        </style>
+        <!-- User-generated js -->
+        <!--<script>
+            try {
+
+    $(function() {
+
+    });
+
+  } catch (error) {
+    console.error("Your javascript has an error: " + error);
+  }
+        </script>-->
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <div id="newHead" data-theme="a" data-role="header" data-position="fixed">
+                    <h3>
+                        Task Advisor
+                    </h3>
+                </div>
+                </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="taskBox">
+                        </label>
+                        <input name="taskBox" id="taskBox" placeholder="Add Task Name" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="addDesc">
+                        </label>
+                        <input name="addDesc" id="addDesc" placeholder="Add Task Description" value="" type="text" />
+                    </fieldset>
+                </div>
+                <a id="addBtn" data-role="button" data-rel="back" data-theme="a" href="#" data-icon="star" data-iconpos="left">
+                    Add Task
+                </a>
+                <a id="clearBtn" data-role="button" data-theme="a" href="#" data-icon="refresh" data-iconpos="left">
+                    Clear all Tasks
+                </a>
+                <div data-role="collapsible-set" >
+                    <div data-role="collapsible" data-collapsed="false" >
+					
+                    </div>
+					
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
