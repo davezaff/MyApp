@@ -1,7 +1,9 @@
 $(document).ready(
 		function() {
+		
+		
 		$('#taskBox').focus();
-		var x = '0';
+		var i = '0';
 		
 			
 			//$('#collapsible').collapsible();
@@ -42,10 +44,12 @@ $(document).ready(
 												// x=x+2;
 												 
 												
-								$('<div data-role="collapsible"><h3>' + "Date Created:  " + '<br>' + currentDate + "<br>" + ($("#taskBox").val()) +  '</h3><p>' + ($('#addDesc').val()) +'</p></div>').appendTo('[data-role="content"]');
-								$('div[data-role=collapsible]').collapsible({theme:'c',refresh:true});
-								
-								
+								$('<div data-role="collapsible" ><h3>' + "Date Created:  " + '<br>' + currentDate + 
+									"<br>" + ($("#taskBox").val()) + '</h3><p>' + '<input type="checkbox" id=' + i +  '/>'+
+										($('#addDesc').val()) +'</p></div>').appendTo('[data-role="content"]');
+											$('div[data-role=collapsible]').collapsible({theme:'c',refresh:true});
+												i++;
+
 								
 								$('#addDesc').val("");
 								$('#taskBox').val("");
