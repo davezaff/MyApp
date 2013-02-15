@@ -1,6 +1,7 @@
 $(document).ready(
 		function() {
-				
+		$.mobile.loading('show');
+		$.mobile.loading('hide');
 		$('#taskBox').focus();
 		var x = '0';
 		var y = '0';	
@@ -10,10 +11,11 @@ $(document).ready(
 			
 						
 			$("#addBtn").click(function() {
-						
+						$.mobile.loading('show');
 							if ($('#taskBox').val() == ('')
 									|| ($('#addDesc').val() === (''))) {
 								alert('Fields can not be blank!. ');
+								$.mobile.loading('hide');
 							} else
 								{
 
@@ -46,6 +48,7 @@ $(document).ready(
 								$('#addDesc').val("");
 								$('#taskBox').val("");
 								$('#taskBox').focus();
+								$.mobile.loading('hide');
 								 
 												
 							}
@@ -67,6 +70,7 @@ $(document).ready(
 							else {
 								
 							alert ("Please Select Tasks to Remove!");
+							$.mobile.loading('hide');
 						}
 							
 				
