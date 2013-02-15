@@ -1,21 +1,14 @@
 $(document).ready(
 		function() {
-		
-		
+				
 		$('#taskBox').focus();
-		var i = '0';
-		
-			
-			//$('#collapsible').collapsible();
-			
-			// $('#collapsible-resizer').resizable({minHeight:240,
-			// minWidth: 300, resize: function() {
-			// $('#collapsible').collapsible( "refresh" );
-			// }
-			// });
+		var x = '0';
+		var y = '0';	
+		var z = '0';
+			$('#collapsible').collapsible();
 			
 			
-			
+						
 			$("#addBtn").click(function() {
 						
 							if ($('#taskBox').val() == ('')
@@ -42,49 +35,52 @@ $(document).ready(
 												// + ($('#addDesc').val())
 												// + '</p> </div>').trigger('create');
 												// x=x+2;
-												 
-												
-								$('<div data-role="collapsible" ><h3>' + "Date Created:  " + '<br>' + currentDate + 
-									"<br>" + ($("#taskBox").val()) + '</h3><p>' + '<input type="checkbox" id=' + i +  '/>'+
+												 												
+								$('<div data-role="collapsible" ><h3 class="holder"  id=' + x +  '>' + "Date Created:  " + '<br>' + currentDate + 
+									"<br>" + ($("#taskBox").val()) + '</h3><p class="para">' + '<input name="checker['+ y +']"+ value='+ y +' class="check" type="checkbox" id=' + z +  '>'+
 										($('#addDesc').val()) +'</p></div>').appendTo('[data-role="content"]');
 											$('div[data-role=collapsible]').collapsible({theme:'c',refresh:true});
-												i++;
-
-								
+												x++;
+												y++;
+												z++;
 								$('#addDesc').val("");
 								$('#taskBox').val("");
-
-							
- 
-
 								$('#taskBox').focus();
-								
-
-							
+								 
+												
 							}
 
-						
-
-					});
+						});
 			$('#clearBtn').click(function() {
-				$('div[data-role=collapsible]').empty();
-				//$( ".selector" ).collapsibleset( "refresh" );
-				//$( "#myCollapsibleSet" ).children().trigger( "collapse" );
-				$('div[data-role=collapsible]').collapsible({theme:'c',refresh:true});
-				
-				
-				//window.location.reload(true);;
-				
-
-				alert(" All Notes have been removed! ");
-
-			});
-			
-			$('#collapsible').dblclick (function(){
-			
+					
+					
 								
-			});
-		
-		
+						
+						 if($('.check').is(':checked')){
+						
+															
+								$('div[data-role=collapsible]').collapsible({theme:'c',refresh:true});
+								
+							alert(" You have successfully deleted"+" "+ x +" " + "Tasks ");
+						}
+						
+						//}
+							else {
+								
+							alert ("Please Select Tasks to Remove!");
+						}
+							
+				//
 				
+					
+				
+			});
+			
+			
+			
+			
+				$('#collapsible').dblclick (function(){
+											
+				});
+								
 		});
