@@ -52,25 +52,24 @@ $(document).ready(
 
 						});
 			$('#clearBtn').click(function() {
-					
-					
-								
-						
-						 if($('.check').is(':checked')){
-						
-															
+					 $.mobile.loading('show');		
+					 if($('.check').is(':checked')){
+								$('.holder').parent().remove();
+								$('.para').parent().remove();
+								$.mobile.loading('hide');
 								$('div[data-role=collapsible]').collapsible({theme:'c',refresh:true});
 								
 							alert(" You have successfully deleted"+" "+ x +" " + "Tasks ");
+							
 						}
 						
-						//}
+						
 							else {
 								
 							alert ("Please Select Tasks to Remove!");
 						}
 							
-				//
+				
 				
 					
 				
