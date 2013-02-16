@@ -42,29 +42,22 @@
         </h3>
     </div>
 	
-    <div data-role="content">
+    <div data-role="content" data-heme="a" data-content-theme="c">
         <div data-role="fieldcontain">
-            <fieldset data-role="controlgroup">
+            <fieldset data-role="controlgroup" data-heme="a" data-content-theme="c">
                 <label for="sbar">
                 </label>
-                <input name="sbar" id="sbar" placeholder="Search Site" value="" type="search"
-            </fieldset>
-       </div>
+                <input a title='Search Site'name="sbar" id="sbar" placeholder="Search Site" value="" type="search"/>
+          
         
 		<span class="pics">  
-		<ul>
-		<li><a href="https://dl.dropbox.com/u/46305297/MyApp/images/rachel.zoe.1.jpg"><img src="css/images/rachel.zoe.1.jpg"></a> </li>
-		<li><a href="https://dl.dropbox.com/u/46305297/MyApp/images/kard.jpg"><img src="css/images/kard.jpg"></a> </li>
-		<li><a href="https://dl.dropbox.com/u/46305297/MyApp/images/rachel.zoe.jpg"><img src="css/images/rachel.zoe.jpg"></a> </li>
+		<ul data-filter="true">
+		<li><a href="https://dl.dropbox.com/u/46305297/MyApp/images/rachel.zoe.1.jpg" title="Fasion Week" target=""><img src="css/images/rachel.zoe.1.jpg"></a> </li>
+		<li><a href="https://dl.dropbox.com/u/46305297/MyApp/images/kard.jpg" title="Fasion Week" target=""><img src="css/images/kard.jpg" alt="Fahion Week"/> </a> </li>
+		<li><a href="https://dl.dropbox.com/u/46305297/MyApp/images/rachel.zoe.jpg" title="Fasion Week" target=""><img src="css/images/rachel.zoe.jpg"></a> </li>
 		
 		</ul>
-		<div  class="creative_layer">
-		<div class="caption_black wipedown" style="top:100px;left:550px;">  
-                <div class="caption_simple wipeup" style="top:220px;left:550px;"> 
-				 
-				
-				</div><br/>         
-				</div><br/><strong></li></strong></span>
+		
 		
 		
 		
@@ -74,7 +67,7 @@
 		
 		</div>
 			      
-        <div id="bio" data-role="collapsible-set" data-theme="a" data-content-theme="c">
+        <div a id="bio" data-role="collapsible-set" data-theme="a" data-content-theme="c" data-filter="true" title="Experience" target=""></a>
             <div data-role="collapsible">
                 <h3>
                    <center> Stylist Bio</center>
@@ -83,7 +76,7 @@
 				Provided many years of service for companies such as Tarte, Philoshophy, and QVC Inc. </p>
             </div>
         </div>
-        <div id="events" data-role="collapsible-set" data-theme="a" data-content-theme="c">
+        <div a id="events" data-role="collapsible-set" data-theme="a" data-content-theme="c" data-filter="true"  title="Shoot Pricing" target="">
             <div data-role="collapsible">
                 <h3>
                   <center>  Photo &amp; Video Shoots Pricing</center>
@@ -92,7 +85,7 @@
 				<br>Full-Day rate:<br>Up to 10hrs. $650</p>
             </div>
         </div>
-        <div id="wedding" data-role="collapsible-set" data-theme="a" data-content-theme="c">
+        <div a id="wedding" data-role="collapsible-set" data-theme="a" data-content-theme="c"  title="Event Pricing" target="">
             <div data-role="collapsible">
                 <h3>
                  <center>   Wedding &amp; Misc. Event Pricing</center>
@@ -101,7 +94,7 @@
                
                 </div>
 				</div>
-				<div id="photo" data-role="collapsible-set" data-theme="a" data-content-theme="c" overflow="scroll">
+				<div id="photo" data-role="collapsible-set" data-theme="a" data-content-theme="c" overflow="scroll" title="Portfolio" target="">
             <div data-role="collapsible" >
                 <h3>
                  <center>   Photo Gallery </center>
@@ -120,7 +113,7 @@
 			
 			<center>
 			<div>
-				<a id="contactLink" href="https:\\zaffarano11@gmail.com"  target="_blank" data-transition="fade">
+				<a id="contactLink" title="Email Stylist" href="https:\\zaffarano11@gmail.com"  target="_blank" data-transition="fade">
 					<font color="white" size="2px">Contact: Karen Zaffarano <br>zaffarano11@gmail.com</font>
 				</a>
 				</div>
@@ -128,14 +121,20 @@
 			<div>
 			<table>
 			<tr>
-			<td><button id='butn1' type='button' background= "hidden" onclick="window.location.href='http://www.facebook.com/karen.jefford.zaffarano'"> <img src="css/images/bfbook.jpg" data-mini="true" /></button></td>
-				<td><button id='btn2'type='button' background="hidden" onclick="window.location.href='http://www.linkedin.com"><img src="css/images/linkedinpic.ico"  data-mini="true" /></button></td>
-				<td><button id='btn3'type='button' background="hidden" onclick="window.location.href='https://plus.google.com/u/0'"><img src="css/images/google-ico.png"  data-mini="true"/></button></td>
+			<td>
+				<button id='butn1' title="facebook" target='' type='button' background= "hidden" onclick="window.location.href='http://www.facebook.com/karen.jefford.zaffarano'"> <img src="css/images/bfbook.jpg" data-mini="true" /></button></a></td>
+			<td>
+			<button a  title="Linked In" target=""id='btn2'type='button' background="hidden" onclick="window.location.href='http://www.linkedin.com"><img src="css/images/linkedinpic.ico"  data-mini="true" /></a></button>
+			</td>
+				<td>
+				<button a title='Google+'id='btn3'type='button' background="hidden" onclick="window.location.href='https://plus.google.com/u/0'"><img src="css/images/google-ico.png"  data-mini="true"/></button></a>
+				</td>
 				</tr>
 			</table>
-			</center>
+			<	/center>
 		</div>	
-		
+	</fieldset>
+  </div>
 </div>
 <footer>
 </footer>
