@@ -4,8 +4,7 @@ $(document).ready(
 		$.mobile.loading('hide');
 		$('#taskBox').focus();
 		var x = '0';
-		var y = '0';	
-		var z = '0';
+	
 			$('#collapsible').collapsible();
 			
 			
@@ -38,13 +37,12 @@ $(document).ready(
 												// + '</p> </div>').trigger('create');
 												// x=x+2;
 												 												
-								$('<div data-role="collapsible" ><h3 class="holder"  id=' + x +  '>' + "Date Created:  " + '<br>' + currentDate + 
-									"<br>" + ($("#taskBox").val()) + '</h3><p class="para">' + '<input name="checker['+ y +']"+ value='+ y +' class="check" type="checkbox" id=' + z +  '>'+
+								$('<div data-role="collapsible" ><h3 class="holder"  id="h3_' + x+'">' + "Date Created:  " + '<br>' + currentDate + 
+									"<br>" + ($("#taskBox").val()) + '</h3><p class="para" id="para_' + x+'" >' + '<input name="checker" value='+ x+' class="check" type="checkbox" id="chk_' + x+'">'+
 										($('#addDesc').val()) +'</p></div>').appendTo('[data-role="content"]');
 											$('div[data-role=collapsible]').collapsible({theme:'c',refresh:true});
 												x++;
-												y++;
-												z++;
+												
 								$('#addDesc').val("");
 								$('#taskBox').val("");
 								$('#taskBox').focus();
@@ -55,10 +53,24 @@ $(document).ready(
 
 						});
 			$('#clearBtn').click(function() {
-					 $.mobile.loading('show');		
-					 if($('.check').is(':checked')){
-								$('.holder').parent().remove();
-								$('.para').parent().remove();
+					 $.mobile.loading('show');
+					$('input[type=checkbox]').each(function () {					 
+					 if($('#checker').val()).is(':checked'){
+					 $('.div').find('h3_'+ x).remove('.div');
+					 
+					
+					 // $('#para').hide();
+					 // $('#h3').hide();
+					// document.getElementsByAttribute('#para').val();
+							 //document.getElementById(this);
+							 //document.body.removeChild($('#para_0'));
+							 //document.body.hasChildNodes($(this).val());
+									alert(this);
+							//var head =document.getElementById('h3_' + $('.check').val()));
+								//var c =document.getElementById('h3_' + $('.check').val()));
+										
+								// $('.holder').parent().remove();
+								// $('.para').parent().remove();
 								$.mobile.loading('hide');
 								$('div[data-role=collapsible]').collapsible({theme:'c',refresh:true});
 								
@@ -75,7 +87,7 @@ $(document).ready(
 							
 				
 				
-					
+				});	
 				
 			});
 			

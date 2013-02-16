@@ -31,47 +31,86 @@
     console.error("Your javascript has an error: " + error);
   }
         </script>-->
-    </head>
-    <body>
-        <!-- Home -->
-        <div data-role="page" id="page1">
-           
-                <div id="newHead" data-theme="a" data-role="header" data-position="fixed">
-                    <h3 >
-                        Task Advisor 
-                    </h3>
-                
-                </div>
-            <div data-role="content" id="wrapper">
-                <div data-role="fieldcontain">
-                    <fieldset data-role="controlgroup" data-mini="true">
-                        <label for="taskBox">
-                        </label>
-                        <input name="taskBox" id="taskBox" placeholder="Add Task Name" value="" type="text" />
-                    </fieldset>
-                </div>
-                <div data-role="fieldcontain">
-                    <fieldset data-role="controlgroup">
-                        <label for="addDesc">
-                        </label>
-                        <input name="addDesc" id="addDesc" placeholder="Add Task Description" value="" type="text" />
-                    </fieldset>
-                </div>
-                <a id="addBtn" data-role="button" data-rel="back" data-theme="a" href="#" data-icon="star" data-iconpos="left">
-                    Add Task
-                </a>
-                <a id="clearBtn" data-role="button" data-theme="a" href="#" data-icon="refresh" data-iconpos="left">
-                    Clear all Tasks
-                </a>
-                <div data-role="collapsible-set">
-                    <div data-role="collapsible" data-collapsed="false" >
-					
-                    </div>
-					
-                        
-                    </div>
-                </div>
+<!-- Home -->
+</head>
+<body>
+<div data-role="page" id="page1">
+    <div id="head" data-theme="a" data-role="header" data-position="fixed">
+        <h3 id="head">
+           Karen Zaffarano <br>
+		   Makeup Artist/Hair Stylist
+        </h3>
+    </div>
+    <div data-role="content">
+        <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup">
+                <label for="sbar">
+                </label>
+               <center> <input name="sbar" id="sbar" placeholder="Search Site" value="" type="search" </center>
+            </fieldset>
+        </div>
+        <a href="#page1">
+		  <div style="width: 288px; height: 100px; position: relative; background-color: hidden; border: hidden #b8b8b8;">
+                <img id="displayPic" src="css/images/IMG_0337.jpg" style= width='288px' height='100px' position="relative"
+                alt="image" style="position: relative; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px" >
+				<img id="displayPic" src="css/images/IMG_0342.jpg" style= width='288px' height='100px' position="relative"
+                alt="image" style="position: relative; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px" >
+				
+            </div>
+			
+        </a>
+        <div id="bio" data-role="collapsible-set" data-theme="a" data-content-theme="c">
+            <div data-role="collapsible">
+                <h3>
+                    Stylist Bio
+                </h3>
+				<p> Has worked with many On-Air hosts and guests on QVC for 15 yrs.<br>
+				Provided many years of service for companies such as Tarte, Philoshophy, and QVC Inc. </p>
             </div>
         </div>
-    </body>
+        <div id="events" data-role="collapsible-set" data-theme="a" data-content-theme="c">
+            <div data-role="collapsible">
+                <h3>
+                    Photo &amp; Video Shoots Pricing
+                </h3>
+				<p> Half-Day rate available:<br>Up to 4 hrs. $350
+				<br>Full-Day rate:<br>Up to 10hrs. $650</p>
+            </div>
+        </div>
+        <div id="wedding" data-role="collapsible-set" data-theme="a" data-content-theme="c">
+            <div data-role="collapsible">
+                <h3>
+                    Wedding &amp; Misc. Event Pricing
+                </h3>
+               <p> 3 person min. @$75 per service.<br>Hair, Makeup, &amp; Airbrushing.<br>Under 3 persons daily rate of $225 will be Applied.<br>$50 fee for trial Brides.</p>
+               
+                </div>
+              
+               
+                </div>
+        
+			</div>
+			
+			<center>
+			<table>
+			<tr>
+			<td><button type='button1' background= "hidden" onclick="window.location.href='http://www.facebook.com/karen.jefford.zaffarano'"> <img src="css/images/bfbook.jpg" data-mini="true" /></button></td>
+				<td><button type='button2' background="hidden" onclick="window.location.href='http://www.linkedin.com"><img src="css/images/linkedinpic.ico"  data-mini="true" /></button></td>
+				<td><button type='button3' background="hidden" onclick="window.location.href='https://plus.google.com/u/0'"><img src="css/images/google-ico.png"  data-mini="true"/></button></td>
+				</tr>
+			</table>
+			</center>
+				<div>
+				<a id="contactLink" href="https:\\zaffarano11@gmail.com" target="_blank" data-transition="fade">
+					Contact: zaffarano11@gmail.com
+				</a>
+				</div>
+</div>
+</div>
+			
+    	</body>
+		
+			
+				
+		
 </html>
